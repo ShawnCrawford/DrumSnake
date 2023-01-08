@@ -7,8 +7,8 @@ interface Frontmatter {
   description: string;
 }
 const metadata = {
-  title: "Blog - NoFuss Template",
-  description: "Blog Page of NoFuss Template.",
+  title: "About - Drum Snake",
+  description: "About Drum Snake.",
 };
 
 let blogs = await Astro.glob<Frontmatter>("./blog/*.mdx");
@@ -17,8 +17,9 @@ blogs = blogs.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Dat
 
 <Layout {...metadata}>
   <section>
-    <h1 class="text-4xl mb-6 dark:text-white">Blog</h1>
-    <p class="dark:text-zinc-300 mb-6">This is how the blog page looks like. Just add an MDX file to the blog folder and it will show up here.</p>
+    <h1 class="text-4xl mb-6 dark:text-white">About</h1>
+    <p class="dark:text-zinc-300 mb-6">Drum Snake is a device that is designed to be placed in a drum to handle resonant noises that cause unwanted overtones. This is accomplished without having to take off your drum head to insert muffling devices or use adhesive items on top of your drums. The later not removing the overtones but limiting the batter head and thus choking the impacts noise. The Drum Snake is inserted through a drums air hole to which it will rest on the bottom resonant head inside the drum. A string is attached to the Drum Snake to enable the user to easily pull the drum snake back out of the drum or limit the amount of resonate head muffling. The Drum Snake is made with sustainably sourced materials and is made locally in Corvallis, OR. 
+    </p>
   </section>
   <section>
     <ul>
