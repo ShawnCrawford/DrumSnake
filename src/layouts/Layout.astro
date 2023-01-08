@@ -11,15 +11,14 @@ export interface Props {
 }
 
 const defaultMeta = {
-  title: "NoFuss Astro",
-  description: "No fuss Astro Template for Landing, Blog and Docs page. No complicated design and setup, just start editing.",
-  image: "/banner.png",
-  imageAlt: "Mountain Logo with NoFuss",
+  title: "Drum Snake",
+  description: "Drum Snake is a device that is designed to be placed in a drum to handle resonant noises that cause unwanted overtones. This is accomplished without having to take off your drum head to insert muffling devices or use adhesive items on top of your drums. The later not removing the overtones but limiting the batter head and thus choking the impacts noise. The Drum Snake is inserted through a drums air hole to which it will rest on the bottom resonant head inside the drum. A string is attached to the Drum Snake to enable the user to easily pull the drum snake back out of the drum or limit the amount of resonate head muffling. The Drum Snake is made with sustainably sourced materials and is made locally in Corvallis, OR.",
+/*   image: "/banner.png",
+  imageAlt: "Mountain Logo with NoFuss", */
 };
 
 const { title = defaultMeta.title, description = defaultMeta.description, heroImage = defaultMeta.image, imageAlt = defaultMeta.imageAlt } = Astro.props as Props;
-const canonicalURL = new URL(Astro.url).href;
-
+const canonicalURL = new URL(Astro.url).href; 
 const classBody =
   "scrollbar-thin scrollbar-thumb-zinc-400 scrollbar-track-zinc-300 dark:scrollbar-thumb-zinc-600 dark:scrollbar-track-zinc-800 dark:bg-zinc-900 dark:text-white font-inter selection:bg-blue-500/70 text-xl";
 ---
