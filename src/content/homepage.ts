@@ -1,17 +1,17 @@
 export const homepage = [
   {
-    title: "Blazingly Fast",
-    content: "The reason why I chose Astro is because it's blazingly fast. It's also a component-based framework, so you can easily reuse your components.",
+    title: "Versatile",
+    content: "Drum Snake can be used immediately with a noticeable effect.",
     icon: "uil:rocket",
   },
   {
-    title: "Easy to use",
-    content: "Need to use this template? Just clone it and start writing your content. No complicated setup, no complicated design.",
+    title: "Non-Intrusive",
+    content: "Drum Snake will not get in the way of your drums. No more looking at a object on your drums or trying to not hit muffling methods while you play.",
     icon: "ph:code-bold",
   },
   {
-    title: "Free and Open Source",
-    content: "Found some issues or want to contribute? Feel free to open an issue or pull request on GitHub.",
+    title: "Clean",
+    content: "Drum Snake doesn't leave any residue on your drum heads and will be out of sight and nowhere near striking range.",
     icon: "charm:plant-pot",
   },
 ];
